@@ -155,7 +155,7 @@ export const contactInfo: ContactInfo = {
 export const socialLinks: SocialLink[] = [
   { platform: 'twitter', url: 'https://www.twitter.com/bhanu6143', icon: 'icon-twitter' },
   { platform: 'facebook', url: 'https://www.facebook.com/superstarbhanu', icon: 'icon-facebook' },
-  { platform: 'instagram', url: 'https://www.instagram.com/bhanuprakash_vangari6143', icon: 'icon-instagram' },
+  { platform: 'instagram', url: 'https://www.instagram.com/bhanuprakash_vangari007', icon: 'icon-instagram' },
 ]
 
 export const navItems: NavItem[] = [
