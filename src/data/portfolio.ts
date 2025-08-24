@@ -99,27 +99,27 @@ export const projects: Project[] = [
     id: '1',
     title: 'Branding & Illustration Design',
     category: 'Graphics & PR Design',
-    imageUrl: '/src/assets/images/work-1.jpg',
+    imageUrl: '/images/work-1.jpg',
   },
   {
     id: '2',
     title: 'Stupefy Arts',
     category: 'Graphics Design & UI/UX Design',
-    imageUrl: '/src/assets/images/work-2.jpg',
+    imageUrl: '/images/work-2.jpg',
     link: 'https://www.instagram.com/stupefyarts',
   },
   {
     id: '3',
     title: 'Banking Reimagined',
     category: 'UI/UX Design',
-    imageUrl: '/src/assets/images/work-3.jpg',
+    imageUrl: '/images/work-3.jpg',
     link: 'https://dribbble.com/shots/13637592-SBI-Banking-Reimagined-UI-Part-1',
   },
   {
     id: '4',
     title: 'Learny',
     category: 'UI/UX Design',
-    imageUrl: '/src/assets/images/work-4.png',
+    imageUrl: '/images/work-4.png',
     link: 'https://dribbble.com/shots/13751585-Learny-A-Virtual-University-Companion-For-UG-s-PG-s',
   },
   {
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     id: '6',
     title: 'Photographer',
     category: 'Landscape Photography',
-    imageUrl: '/src/assets/images/work-5.jpeg',
+    imageUrl: '/images/work-5.jpeg',
     link: 'https://500px.com/bhanuprakashvangari',
   },
 ]
@@ -155,7 +155,7 @@ export const contactInfo: ContactInfo = {
 export const socialLinks: SocialLink[] = [
   { platform: 'twitter', url: 'https://www.twitter.com/bhanu6143', icon: 'icon-twitter' },
   { platform: 'facebook', url: 'https://www.facebook.com/superstarbhanu', icon: 'icon-facebook' },
-  { platform: 'instagram', url: 'https://www.instagram.com/bhanuprakash_vangari6143', icon: 'icon-instagram' },
+  { platform: 'instagram', url: 'https://www.instagram.com/bhanuprakash_vangari007', icon: 'icon-instagram' },
 ]
 
 export const navItems: NavItem[] = [

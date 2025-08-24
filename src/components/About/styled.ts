@@ -42,7 +42,7 @@ export const AboutOverlay = styled.div`
 
 export const AboutImage = styled.div`
   width: 100%;
-  background-image: url('/src/assets/images/about.JPG');
+  background-image: url('/images/about.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

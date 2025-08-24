@@ -68,7 +68,7 @@ export const About = () => {
             <AboutActions>
               <Button 
                 as="a" 
-                href="/src/assets/images/Resume.pdf" 
+                href="/images/Resume.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"

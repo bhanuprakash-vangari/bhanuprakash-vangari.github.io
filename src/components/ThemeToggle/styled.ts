@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ThemeToggleButton = styled.button`
   position: fixed;
-  top: ${({ theme }) => theme.spacing[6]};
+  bottom: ${({ theme }) => theme.spacing[6]};
   right: ${({ theme }) => theme.spacing[6]};
   z-index: ${({ theme }) => theme.zIndices.banner};
   
@@ -37,7 +37,7 @@ export const ThemeToggleButton = styled.button`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    top: ${({ theme }) => theme.spacing[4]};
+    bottom: ${({ theme }) => theme.spacing[4]};
     right: ${({ theme }) => theme.spacing[4]};
     width: 44px;
     height: 44px;
