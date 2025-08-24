@@ -32,11 +32,11 @@ export const ProgressBarLabel = styled.h3`
   margin-bottom: ${({ theme }) => theme.spacing[3]};
   font-size: ${({ theme }) => theme.fontSizes.base};
   font-weight: ${({ theme }) => theme.fontWeights.medium};
-  color: ${({ theme }) => theme.colors.textPrimary};
+  color: #111827;
 `
 
 export const ProgressBarContainer = styled.div`
-  background-color: ${({ theme }) => theme.colors.light};
+  background-color: #f3f4f6;
   border-radius: ${({ theme }) => theme.borderRadius.base};
   overflow: hidden;
   height: 8px;
@@ -69,6 +69,6 @@ export const ProgressBarFill = styled.div<ProgressBarFillProps>`
     top: -${({ theme }) => theme.spacing[6]};
     font-size: ${({ theme }) => theme.fontSizes.sm};
     font-weight: ${({ theme }) => theme.fontWeights.medium};
-    color: ${({ theme }) => theme.colors.textPrimary};
+    color: #111827;
   }
 `

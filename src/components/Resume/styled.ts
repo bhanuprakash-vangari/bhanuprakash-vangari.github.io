@@ -34,9 +34,9 @@ export const ResumeNav = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  background: ${({ theme }) => theme.colors.white};
+  background: #ffffff;
   border-radius: ${({ theme }) => theme.borderRadius.lg};
-  box-shadow: ${({ theme }) => theme.shadows.md};
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -46,7 +46,7 @@ export const ResumeNav = styled.ul`
 `
 
 export const ResumeNavItem = styled.li`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+  border-bottom: 1px solid #ffffff;
 
   &:last-child {
     border-bottom: none;
@@ -55,7 +55,7 @@ export const ResumeNavItem = styled.li`
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     flex: 1;
     border-bottom: none;
-    border-right: 1px solid ${({ theme }) => theme.colors.light};
+    border-right: 1px solid #f3f4f6;
 
     &:last-child {
       border-right: none;
@@ -66,22 +66,22 @@ export const ResumeNavItem = styled.li`
 export const ResumeNavLink = styled.a<ResumeNavLinkProps>`
   display: block;
   padding: ${({ theme }) => theme.spacing[4]} ${({ theme }) => theme.spacing[6]};
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: #6b7280;
   text-decoration: none;
   font-weight: ${({ theme }) => theme.fontWeights.medium};
   transition: all ${({ theme }) => theme.transitions.base};
   position: relative;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
-    background-color: ${({ theme }) => theme.colors.primary}11;
+    color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.1);
   }
 
   ${({ $isActive, theme }) =>
     $isActive &&
     css`
-      color: ${theme.colors.primary};
-      background-color: ${theme.colors.primary}22;
+      color: #3b82f6;
+      background-color: rgba(59, 130, 246, 0.2);
       font-weight: ${theme.fontWeights.semibold};
 
       &::before {
@@ -91,7 +91,7 @@ export const ResumeNavLink = styled.a<ResumeNavLinkProps>`
         top: 0;
         bottom: 0;
         width: 4px;
-        background-color: ${theme.colors.primary};
+        background-color: #3b82f6;
 
         @media (max-width: ${theme.breakpoints.md}) {
           left: 0;
@@ -133,7 +133,7 @@ export const ResumeTab = styled.div`
 export const ResumeTabTitle = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes['3xl']};
   font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  color: ${({ theme }) => theme.colors.black};
+  color: #111827;
   margin-bottom: ${({ theme }) => theme.spacing[8]};
   position: relative;
 
@@ -144,7 +144,7 @@ export const ResumeTabTitle = styled.h2`
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: #3b82f6;
     border-radius: ${({ theme }) => theme.borderRadius.full};
   }
 
@@ -156,7 +156,7 @@ export const ResumeTabTitle = styled.h2`
 export const ResumeItem = styled.div`
   margin-bottom: ${({ theme }) => theme.spacing[8]};
   padding-left: ${({ theme }) => theme.spacing[6]};
-  border-left: 3px solid ${({ theme }) => theme.colors.primary};
+  border-left: 3px solid #3b82f6;
   position: relative;
 
   &::before {
@@ -166,10 +166,10 @@ export const ResumeItem = styled.div`
     top: ${({ theme }) => theme.spacing[2]};
     width: 14px;
     height: 14px;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: #3b82f6;
     border-radius: 50%;
-    border: 3px solid ${({ theme }) => theme.colors.white};
-    box-shadow: 0 0 0 1px ${({ theme }) => theme.colors.primary};
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #3b82f6;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -191,8 +191,8 @@ export const ResumeItemContent = styled.div`
 
 export const ResumeItemDate = styled.span`
   display: inline-block;
-  background-color: ${({ theme }) => theme.colors.primary}22;
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
   padding: ${({ theme }) => theme.spacing[1]} ${({ theme }) => theme.spacing[3]};
   border-radius: ${({ theme }) => theme.borderRadius.full};
   font-size: ${({ theme }) => theme.fontSizes.sm};
@@ -203,27 +203,27 @@ export const ResumeItemDate = styled.span`
 export const ResumeItemTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.xl};
   font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  color: ${({ theme }) => theme.colors.black};
+  color: #111827;
   margin-bottom: ${({ theme }) => theme.spacing[1]};
   line-height: ${({ theme }) => theme.lineHeights.tight};
 `
 
 export const ResumeItemCompany = styled.span`
   display: block;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: #6b7280;
   font-weight: ${({ theme }) => theme.fontWeights.medium};
   margin-bottom: ${({ theme }) => theme.spacing[2]};
 `
 
 export const ResumeItemGrade = styled.span`
   display: block;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: #6b7280;
   margin-bottom: ${({ theme }) => theme.spacing[3]};
   font-size: ${({ theme }) => theme.fontSizes.sm};
 `
 
 export const ResumeItemDescription = styled.p`
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: #6b7280;
   line-height: ${({ theme }) => theme.lineHeights.relaxed};
   margin: 0;
 `
@@ -241,10 +241,10 @@ export const CircularSkillsGrid = styled.div`
 `
 
 export const ProgressSection = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #ffffff;
   padding: ${({ theme }) => theme.spacing[8]};
   border-radius: ${({ theme }) => theme.borderRadius.lg};
-  box-shadow: ${({ theme }) => theme.shadows.md};
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 `
 
 export const SkillsGrid = styled.div`

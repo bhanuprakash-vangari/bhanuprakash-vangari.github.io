@@ -14,9 +14,9 @@ export const CircularProgressContainer = styled.div`
 `
 
 export const CircularProgressWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #ffffff;
   border-radius: ${({ theme }) => theme.borderRadius.lg};
-  box-shadow: ${({ theme }) => theme.shadows.md};
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   padding: ${({ theme }) => theme.spacing[4]};
   text-align: center;
   position: relative;
@@ -26,7 +26,7 @@ export const CircularProgressTitle = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes.lg};
   font-weight: ${({ theme }) => theme.fontWeights.semibold};
   margin-bottom: ${({ theme }) => theme.spacing[4]};
-  color: ${({ theme }) => theme.colors.textPrimary};
+  color: #111827;
 `
 
 export const CircularProgressSvg = styled.svg`
@@ -36,12 +36,12 @@ export const CircularProgressSvg = styled.svg`
 
 export const CircularProgressTrack = styled.circle`
   fill: none;
-  stroke: ${({ theme }) => theme.colors.light};
+  stroke: #f3f4f6;
 `
 
 export const CircularProgressFill = styled.circle`
   fill: none;
-  stroke: ${({ theme }) => theme.colors.primary};
+  stroke: #3b82f6;
   stroke-linecap: round;
   transition: stroke-dashoffset 2s ease-in-out;
   animation: ${progressAnimation} 2s ease-in-out;
@@ -52,12 +52,16 @@ export const CircularProgressValue = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: ${({ theme }) => theme.spacing[2]};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .percentage {
     font-size: ${({ theme }) => theme.fontSizes['2xl']};
     font-weight: ${({ theme }) => theme.fontWeights.bold};
-    color: ${({ theme }) => theme.colors.textPrimary};
+    color: #111827;
+    text-align: center;
+    line-height: 1;
 
     sup {
       font-size: ${({ theme }) => theme.fontSizes.sm};
@@ -68,7 +72,7 @@ export const CircularProgressValue = styled.div`
 export const CircularProgressStats = styled.div`
   display: flex;
   margin-top: ${({ theme }) => theme.spacing[4]};
-  border-top: 1px solid ${({ theme }) => theme.colors.light};
+  border-top: 1px solid #f3f4f6;
   padding-top: ${({ theme }) => theme.spacing[4]};
 `
 
@@ -77,18 +81,18 @@ export const CircularProgressStat = styled.div`
   text-align: center;
 
   &:first-child {
-    border-right: 1px solid ${({ theme }) => theme.colors.light};
+    border-right: 1px solid #f3f4f6;
   }
 
   .value {
     font-size: ${({ theme }) => theme.fontSizes.xl};
     font-weight: ${({ theme }) => theme.fontWeights.bold};
-    color: ${({ theme }) => theme.colors.textPrimary};
+    color: #111827;
     margin-bottom: ${({ theme }) => theme.spacing[1]};
   }
 
   .label {
     font-size: ${({ theme }) => theme.fontSizes.sm};
-    color: ${({ theme }) => theme.colors.textSecondary};
+    color: #6b7280;
   }
 `
