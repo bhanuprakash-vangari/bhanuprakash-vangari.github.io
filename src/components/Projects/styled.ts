@@ -15,7 +15,7 @@ export const ProjectsHeader = styled.div`
 export const ProjectsTitle = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes['7xl']};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
-  color: ${({ theme }) => theme.colors.light};
+  color: ${({ theme }) => theme.colors.textSecondary};
   opacity: 0.1;
   line-height: 0.8;
   margin-bottom: ${({ theme }) => theme.spacing[2]};
@@ -28,7 +28,7 @@ export const ProjectsTitle = styled.h1`
 export const ProjectsSubtitle = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes['3xl']};
   font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  color: ${({ theme }) => theme.colors.textPrimary};
+  color: ${({ theme }) => theme.colors.black};
   margin-bottom: ${({ theme }) => theme.spacing[6]};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {

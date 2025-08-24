@@ -9,8 +9,10 @@ export const ThemeToggleButton = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.colors.border};
-  background-color: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.background === '#1a1a1a' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.7)'};
+  background-color: ${({ theme }) => theme.colors.background === '#1a1a1a' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)'};
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   color: ${({ theme }) => theme.colors.textPrimary};
   
   display: flex;

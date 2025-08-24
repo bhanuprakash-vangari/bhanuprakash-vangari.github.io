@@ -25,7 +25,7 @@ const fadeInUp = keyframes`
 
 export const HeroSection = styled.section`
   min-height: ${({ theme }) => theme.portfolio.heroMinHeight};
-  background: ${({ theme }) => theme.colors.textInverse};
+  background: url('/src/assets/images/background.png') center center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -42,7 +42,9 @@ export const HeroOverlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: ${({ theme }) => theme.colors.overlay}11;
+  background: ${({ theme }) => theme.colors.background === '#1a1a1a' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.2)'};
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 1;
 `
 

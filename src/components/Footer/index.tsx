@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container'
-import { TwitterIcon, FacebookIcon, InstagramIcon, ArrowRightIcon, MapIcon, PhoneIcon, MailIcon } from '@/components/Icons'
+import { TwitterIcon, FacebookIcon, InstagramIcon, ArrowRightIcon, MapIcon, PhoneIcon, MailIcon, LinkedinIcon } from '@/components/Icons'
 import { socialLinks } from '@/data/portfolio'
 import {
   FooterSection,
@@ -45,6 +45,7 @@ export const Footer = () => {
                       {social.platform === 'twitter' && <TwitterIcon />}
                       {social.platform === 'facebook' && <FacebookIcon />}
                       {social.platform === 'instagram' && <InstagramIcon />}
+                      {social.platform === 'linkedin' && <LinkedinIcon />}
                     </FooterSocialLink>
                   </FooterSocialItem>
                 ))}
@@ -94,11 +95,11 @@ export const Footer = () => {
                   </FooterNavItem>
                   <FooterNavItem>
                     <FooterNavLink
-                      href="https://www.instagram.com/stupefyarts"
+                      href="https://github.com/bhanuprakash-vangari"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <ArrowRightIcon /> Stupefy Arts
+                      <ArrowRightIcon /> Github
                     </FooterNavLink>
                   </FooterNavItem>
                   <FooterNavItem>

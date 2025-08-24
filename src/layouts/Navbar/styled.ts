@@ -14,7 +14,8 @@ export const NavbarContainer = styled.nav<NavbarContainerProps>`
   left: 0;
   right: 0;
   z-index: ${({ theme }) => theme.zIndices.sticky};
-  background-color: ${({ theme }) => theme.colors.dark};
+  background-color: ${({ theme }) => theme.colors.background === '#1a1a1a' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)'};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.background === '#1a1a1a' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.7)'};
   transition: all ${({ theme }) => theme.transitions.base};
   padding: ${({ theme }) => theme.spacing[4]} 0;
 
@@ -46,7 +47,7 @@ export const NavbarWrapper = styled.div`
 `
 
 export const NavbarBrand = styled.a`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.textPrimary};
   font-size: ${({ theme }) => theme.fontSizes.xl};
   font-weight: ${({ theme }) => theme.fontWeights.semibold};
   text-decoration: none;
@@ -151,7 +152,7 @@ export const NavbarNavItem = styled.li`
 `
 
 export const NavbarNavLink = styled.a`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.textPrimary};
   text-decoration: none;
   font-weight: ${({ theme }) => theme.fontWeights.medium};
   padding: ${({ theme }) => theme.spacing[3]} ${({ theme }) => theme.spacing[4]};
