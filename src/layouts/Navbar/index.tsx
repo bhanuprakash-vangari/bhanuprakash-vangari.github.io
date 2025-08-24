@@ -50,7 +50,6 @@ export const Navbar = ({ navItems, brandText, brandHref = '#' }: NavbarProps) =>
 
         <NavbarToggle onClick={handleToggle} aria-label="Toggle navigation">
           <MenuIcon />
-          Menu
         </NavbarToggle>
 
         <NavbarMenu $isOpen={isOpen}>
