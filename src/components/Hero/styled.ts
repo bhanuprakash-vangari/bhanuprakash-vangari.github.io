@@ -25,7 +25,7 @@ const fadeInUp = keyframes`
 
 export const HeroSection = styled.section`
   min-height: ${({ theme }) => theme.portfolio.heroMinHeight};
-  background: url('/src/assets/images/background.png') center center/cover no-repeat;
+  background: url('/images/background.png') center center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
