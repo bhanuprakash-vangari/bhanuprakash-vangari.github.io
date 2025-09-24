@@ -55,6 +55,7 @@ export const CircularProgressValue = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 
   .percentage {
     font-size: ${({ theme }) => theme.fontSizes['2xl']};

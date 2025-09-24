@@ -31,27 +31,29 @@ export const CircularProgress = ({
       <CircularProgressWrapper>
         <CircularProgressTitle>{skill.name}</CircularProgressTitle>
         
-        <CircularProgressSvg width={size} height={size}>
-          <CircularProgressTrack
-            cx={size / 2}
-            cy={size / 2}
-            r={radius}
-            strokeWidth={strokeWidth}
-          />
-          <CircularProgressFill
-            cx={size / 2}
-            cy={size / 2}
-            r={radius}
-            strokeWidth={strokeWidth}
-            strokeDasharray={circumference}
-            strokeDashoffset={strokeDashoffset}
-            transform={`rotate(-90 ${size / 2} ${size / 2})`}
-          />
-        </CircularProgressSvg>
-        
-        <CircularProgressValue>
-          <div className="percentage">{skill.value}<sup>%</sup></div>
-        </CircularProgressValue>
+        <div style={{ position: 'relative', display: 'inline-block' }}>
+          <CircularProgressSvg width={size} height={size}>
+            <CircularProgressTrack
+              cx={size / 2}
+              cy={size / 2}
+              r={radius}
+              strokeWidth={strokeWidth}
+            />
+            <CircularProgressFill
+              cx={size / 2}
+              cy={size / 2}
+              r={radius}
+              strokeWidth={strokeWidth}
+              strokeDasharray={circumference}
+              strokeDashoffset={strokeDashoffset}
+              transform={`rotate(-90 ${size / 2} ${size / 2})`}
+            />
+          </CircularProgressSvg>
+          
+          <CircularProgressValue>
+            <div className="percentage">{skill.value}<sup>%</sup></div>
+          </CircularProgressValue>
+        </div>
         
         <CircularProgressStats>
           <CircularProgressStat>

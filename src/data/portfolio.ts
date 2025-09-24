@@ -38,8 +38,15 @@ export const education: Education[] = [
 
 export const experience: Experience[] = [
   {
+    id: '0',
+    date: '2025-Today',
+    position: 'Senior Software Developer Mobile Solution - L1',
+    company: 'Publicis Sapient',
+    description: 'A technical expert who designs and deploys scalable mobile apps, collaborates across teams, and ensures high performance. Requires strong mobile platform skills, proficiency in Swift/Java/Kotlin, and experience with UI, APIs, and databases.'
+  },
+  {
     id: '1',
-    date: '2021-Today',
+    date: '2021-2025',
     position: 'Software Developer II',
     company: 'Accellor Software India PVT LTD [formerly PopcornApps]',
     awards: 'Star Performer of Q3 2023',
@@ -78,9 +85,9 @@ export const experience: Experience[] = [
 export const skills: Skill[] = [
   { name: 'JavaScript / TypeScript', percentage: 95, color: 'color-4' },
   { name: 'React JS', percentage: 70, color: 'color-5' },
-  { name: 'React Native', percentage: 90, color: 'color-6' },
   { name: 'Android(Kotlin)', percentage: 85, color: 'color-1' },
   { name: 'Next JS', percentage: 90, color: 'color-2' },
+  { name: 'React Native', percentage: 90, color: 'color-6' },
   { name: 'GraphQL', percentage: 80, color: 'color-3' },
   { name: 'PostgreSQL', percentage: 70, color: 'color-3' },
   { name: 'Strapi JS', percentage: 90, color: 'color-3' },
@@ -90,8 +97,8 @@ export const skills: Skill[] = [
 
 export const circularSkills: CircularSkill[] = [
   { name: 'JS / TS', value: 95, lastWeek: 80, lastMonth: 90 },
-  { name: 'PostgreSQL', value: 70, lastWeek: 18, lastMonth: 70 },
-  { name: 'Next JS', value: 90, lastWeek: 80, lastMonth: 60 },
+  { name: 'React Native', value: 95, lastWeek: 18, lastMonth: 70 },
+  { name: 'Android(Kotlin)', value: 90, lastWeek: 80, lastMonth: 60 },
 ]
 
 export const projects: Project[] = [
